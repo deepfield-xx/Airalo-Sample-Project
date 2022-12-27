@@ -15,6 +15,9 @@
 		B39BCDAA295BAD5C008F0933 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDA9295BAD5C008F0933 /* NetworkService.swift */; };
 		B39BCDAC295BADDA008F0933 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDAB295BADDA008F0933 /* APIError.swift */; };
 		B39BCDAE295BAE1A008F0933 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDAD295BAE1A008F0933 /* Network.swift */; };
+		B39BCDB3295BB73B008F0933 /* IBMPlexSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B39BCDB1295BB73B008F0933 /* IBMPlexSans-Medium.ttf */; };
+		B39BCDB4295BB73B008F0933 /* IBMPlexSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B39BCDB2295BB73B008F0933 /* IBMPlexSans-SemiBold.ttf */; };
+		B39BCDB7295BB83C008F0933 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDB6295BB83C008F0933 /* UIFont+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +30,9 @@
 		B39BCDA9295BAD5C008F0933 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		B39BCDAB295BADDA008F0933 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		B39BCDAD295BAE1A008F0933 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		B39BCDB1295BB73B008F0933 /* IBMPlexSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Medium.ttf"; sourceTree = "<group>"; };
+		B39BCDB2295BB73B008F0933 /* IBMPlexSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		B39BCDB6295BB83C008F0933 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,7 @@
 		B39BCD8A295BA9B8008F0933 /* Airalo Sample Project */ = {
 			isa = PBXGroup;
 			children = (
+				B39BCDAF295BB6DE008F0933 /* Resources */,
 				B39BCD9F295BA9E0008F0933 /* API */,
 				B39BCDA0295BA9E9008F0933 /* App */,
 				B39BCDA1295BA9F3008F0933 /* Controllers */,
@@ -124,8 +131,34 @@
 		B39BCDA5295BAA20008F0933 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B39BCDB5295BB828008F0933 /* Extension */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		B39BCDAF295BB6DE008F0933 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B39BCDB0295BB6E7008F0933 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B39BCDB0295BB6E7008F0933 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B39BCDB1295BB73B008F0933 /* IBMPlexSans-Medium.ttf */,
+				B39BCDB2295BB73B008F0933 /* IBMPlexSans-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B39BCDB5295BB828008F0933 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B39BCDB6295BB83C008F0933 /* UIFont+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,7 +225,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B39BCDB3295BB73B008F0933 /* IBMPlexSans-Medium.ttf in Resources */,
 				B39BCD98295BA9B9008F0933 /* LaunchScreen.storyboard in Resources */,
+				B39BCDB4295BB73B008F0933 /* IBMPlexSans-SemiBold.ttf in Resources */,
 				B39BCD95295BA9B9008F0933 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B39BCDB7295BB83C008F0933 /* UIFont+Extension.swift in Sources */,
 				B39BCDAE295BAE1A008F0933 /* Network.swift in Sources */,
 				B39BCD8C295BA9B8008F0933 /* AppDelegate.swift in Sources */,
 				B39BCDAC295BADDA008F0933 /* APIError.swift in Sources */,

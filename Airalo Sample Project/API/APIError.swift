@@ -1,10 +1,3 @@
-//
-//  APIError.swift
-//  Airalo Sample Project
-//
-//  Created by MyPlace on 27/12/2022.
-//
-
 import Foundation
 
 struct APIErrorMessage: Codable {
