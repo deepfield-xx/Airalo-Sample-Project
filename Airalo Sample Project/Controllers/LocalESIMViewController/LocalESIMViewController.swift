@@ -8,11 +8,16 @@
 import UIKit
 import Combine
 
+protocol LocalESIMViewControllerDelegate: AnyObject {
+    func didSelect(_ esim: LocalESIM)
+}
+
 class LocalESIMViewController: ViewController {
     private let viewModel: LocalESIMViewModel
     private let tableView = UITableView(frame: .zero, style: .grouped)
     
     var cancelables = Set<AnyCancellable>()
+    weak var delegate: LocalESIMViewControllerDelegate?
     
     init(viewModel: LocalESIMViewModel) {
         self.viewModel = viewModel
@@ -24,6 +29,8 @@ class LocalESIMViewController: ViewController {
     }
 
     override func setUp() {
+        super.setUp()
+        
         tableView.register(LocalESIMViewCell.self, forCellReuseIdentifier: LocalESIMViewCell.typeName)
         tableView.estimatedRowHeight = UITableView.automaticDimension
         tableView.showsVerticalScrollIndicator = false
@@ -65,6 +72,11 @@ extension LocalESIMViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.prepare(with: esim)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let esim = viewModel.localESIMs[indexPath.row]
+        delegate?.didSelect(esim)
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

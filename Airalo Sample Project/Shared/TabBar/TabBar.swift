@@ -1,8 +1,11 @@
 import UIKit
 import Stevia
+import Combine
 
 class TabBar: UIView {
     private let stackView = UIStackView()
+    
+    @Published var selectedIndex: Int = 0
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -43,6 +46,9 @@ extension TabBar: TabBarItemDelegate {
         if let items = stackView.arrangedSubviews as? [TabBarItem] {
             items.forEach {
                 $0.isSelected = $0 == item
+                if $0.isSelected {
+                    self.selectedIndex = items.firstIndex(of: item) ?? 0
+                }
             }
         }
     }
