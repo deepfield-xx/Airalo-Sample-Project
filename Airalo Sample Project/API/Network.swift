@@ -2,12 +2,15 @@ import Foundation
 import Alamofire
 
 enum Network {
-    
+    case localESIM
 }
 
 extension Network {
     var path: String {
-        return ""
+        switch self {
+        case .localESIM:
+            return "countries"
+        }
     }
     
     var method: HTTPMethod {
@@ -15,19 +18,21 @@ extension Network {
     }
     
     var encoding: ParameterEncoding {
-        return URLEncoding.default
+        return  URLEncoding.queryString
     }
     
     var parameters: Parameters? {
-        return [:]
+        switch self {
+        case .localESIM:
+            return ["type": "popular"]
+        }
     }
     
     var headers: HTTPHeaders {
         switch self {
         default:
             let headers: HTTPHeaders = [
-                "Content-Type": "application/json",
-                "Accept": "application/vnd.myplace+json; version=1.0"
+                "Content-Type": "application/json"
             ]
 
             return headers
