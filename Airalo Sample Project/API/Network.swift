@@ -3,6 +3,7 @@ import Alamofire
 
 enum Network {
     case localESIM
+    case countryPackage(String)
 }
 
 extension Network {
@@ -10,6 +11,8 @@ extension Network {
         switch self {
         case .localESIM:
             return "countries"
+        case .countryPackage(let id):
+            return "countries/\(id)"
         }
     }
     
@@ -18,13 +21,15 @@ extension Network {
     }
     
     var encoding: ParameterEncoding {
-        return  URLEncoding.queryString
+        return URLEncoding.default
     }
     
     var parameters: Parameters? {
         switch self {
         case .localESIM:
             return ["type": "popular"]
+        default:
+            return nil
         }
     }
     
