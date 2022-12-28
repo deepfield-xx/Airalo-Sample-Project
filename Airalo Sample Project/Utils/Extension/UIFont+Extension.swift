@@ -8,4 +8,8 @@ extension UIFont {
     class func ibmPlexSansMedium(_ size: CGFloat) -> UIFont {
         return UIFont(name: "IBMPlexSans-Medium", size: size)!
     }
+    
+    class func ibmPlexSans(_ size: CGFloat) -> UIFont {
+        return UIFont(name: "IBMPlexSans-Regular", size: size)!
+    }
 }
