@@ -39,6 +39,11 @@
 		B39BCDE4295C8773008F0933 /* LocalESIMViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDE3295C8773008F0933 /* LocalESIMViewCell.swift */; };
 		B39BCDE7295C89F3008F0933 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B39BCDE6295C89F3008F0933 /* Kingfisher */; };
 		B39BCDE9295C8B2A008F0933 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDE8295C8B2A008F0933 /* NSObject+Extension.swift */; };
+		B39BCDEC295C9764008F0933 /* CountryPackageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDEB295C9764008F0933 /* CountryPackageViewController.swift */; };
+		B39BCDEE295C9A48008F0933 /* CountryPackageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDED295C9A48008F0933 /* CountryPackageViewModel.swift */; };
+		B39BCDF0295C9C32008F0933 /* CountryPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDEF295C9C32008F0933 /* CountryPackage.swift */; };
+		B39BCDF3295CC6A6008F0933 /* CountryPackageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDF2295CC6A6008F0933 /* CountryPackageViewCell.swift */; };
+		B39BCDF6295CC8A3008F0933 /* LinearGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDF5295CC8A3008F0933 /* LinearGradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +78,11 @@
 		B39BCDE0295C7C9E008F0933 /* LocalESIM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalESIM.swift; sourceTree = "<group>"; };
 		B39BCDE3295C8773008F0933 /* LocalESIMViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalESIMViewCell.swift; sourceTree = "<group>"; };
 		B39BCDE8295C8B2A008F0933 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		B39BCDEB295C9764008F0933 /* CountryPackageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPackageViewController.swift; sourceTree = "<group>"; };
+		B39BCDED295C9A48008F0933 /* CountryPackageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPackageViewModel.swift; sourceTree = "<group>"; };
+		B39BCDEF295C9C32008F0933 /* CountryPackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPackage.swift; sourceTree = "<group>"; };
+		B39BCDF2295CC6A6008F0933 /* CountryPackageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPackageViewCell.swift; sourceTree = "<group>"; };
+		B39BCDF5295CC8A3008F0933 /* LinearGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +156,7 @@
 		B39BCDA1295BA9F3008F0933 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B39BCDEA295C96BC008F0933 /* CountryPackageViewController */,
 				B39BCDDB295C7B49008F0933 /* LocalESIMViewController */,
 				B39BCDC2295BBDCD008F0933 /* MainViewController */,
 			);
@@ -156,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				B39BCDE0295C7C9E008F0933 /* LocalESIM.swift */,
+				B39BCDEF295C9C32008F0933 /* CountryPackage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,9 +184,10 @@
 		B39BCDA4295BAA14008F0933 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				B39BCDD8295C7A72008F0933 /* ViewController */,
 				B39BCDBA295BBAE0008F0933 /* Coordinator.swift */,
+				B39BCDF4295CC889008F0933 /* LinearGradientView */,
 				B39BCDCF295C60AC008F0933 /* TabBar */,
+				B39BCDD8295C7A72008F0933 /* ViewController */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -260,6 +273,32 @@
 				B39BCDE3295C8773008F0933 /* LocalESIMViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		B39BCDEA295C96BC008F0933 /* CountryPackageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B39BCDF1295CC68C008F0933 /* Cell */,
+				B39BCDED295C9A48008F0933 /* CountryPackageViewModel.swift */,
+				B39BCDEB295C9764008F0933 /* CountryPackageViewController.swift */,
+			);
+			path = CountryPackageViewController;
+			sourceTree = "<group>";
+		};
+		B39BCDF1295CC68C008F0933 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B39BCDF2295CC6A6008F0933 /* CountryPackageViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B39BCDF4295CC889008F0933 /* LinearGradientView */ = {
+			isa = PBXGroup;
+			children = (
+				B39BCDF5295CC8A3008F0933 /* LinearGradientView.swift */,
+			);
+			path = LinearGradientView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,13 +388,17 @@
 				B39BCDD7295C79F4008F0933 /* UIViewController+Extension.swift in Sources */,
 				B39BCDE4295C8773008F0933 /* LocalESIMViewCell.swift in Sources */,
 				B39BCDDA295C7A90008F0933 /* ViewController.swift in Sources */,
+				B39BCDF6295CC8A3008F0933 /* LinearGradientView.swift in Sources */,
 				B39BCDC1295BBC4F008F0933 /* ServiceContainer.swift in Sources */,
 				B39BCDBB295BBAE0008F0933 /* Coordinator.swift in Sources */,
 				B39BCDB9295BB92A008F0933 /* UIColor+Extension.swift in Sources */,
+				B39BCDEC295C9764008F0933 /* CountryPackageViewController.swift in Sources */,
 				B39BCDD1295C611C008F0933 /* TabBar.swift in Sources */,
 				B39BCDD3295C640D008F0933 /* TabBarItem.swift in Sources */,
 				B39BCDC4295BBDF4008F0933 /* MainViewController.swift in Sources */,
+				B39BCDF0295C9C32008F0933 /* CountryPackage.swift in Sources */,
 				B39BCDE1295C7C9E008F0933 /* LocalESIM.swift in Sources */,
+				B39BCDEE295C9A48008F0933 /* CountryPackageViewModel.swift in Sources */,
 				B39BCDE9295C8B2A008F0933 /* NSObject+Extension.swift in Sources */,
 				B39BCDB7295BB83C008F0933 /* UIFont+Extension.swift in Sources */,
 				B39BCDD5295C6CF5008F0933 /* UIView+Extension.swift in Sources */,
@@ -368,6 +411,7 @@
 				B39BCDBF295BBB94008F0933 /* NavigationController.swift in Sources */,
 				B39BCDAA295BAD5C008F0933 /* NetworkService.swift in Sources */,
 				B39BCD8E295BA9B8008F0933 /* SceneDelegate.swift in Sources */,
+				B39BCDF3295CC6A6008F0933 /* CountryPackageViewCell.swift in Sources */,
 				B39BCDCC295BC48B008F0933 /* NSAttributedString+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
