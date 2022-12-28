@@ -18,6 +18,19 @@
 		B39BCDB3295BB73B008F0933 /* IBMPlexSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B39BCDB1295BB73B008F0933 /* IBMPlexSans-Medium.ttf */; };
 		B39BCDB4295BB73B008F0933 /* IBMPlexSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B39BCDB2295BB73B008F0933 /* IBMPlexSans-SemiBold.ttf */; };
 		B39BCDB7295BB83C008F0933 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDB6295BB83C008F0933 /* UIFont+Extension.swift */; };
+		B39BCDB9295BB92A008F0933 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDB8295BB92A008F0933 /* UIColor+Extension.swift */; };
+		B39BCDBB295BBAE0008F0933 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDBA295BBAE0008F0933 /* Coordinator.swift */; };
+		B39BCDBD295BBB5C008F0933 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDBC295BBB5C008F0933 /* AppCoordinator.swift */; };
+		B39BCDBF295BBB94008F0933 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDBE295BBB94008F0933 /* NavigationController.swift */; };
+		B39BCDC1295BBC4F008F0933 /* ServiceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDC0295BBC4F008F0933 /* ServiceContainer.swift */; };
+		B39BCDC4295BBDF4008F0933 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDC3295BBDF4008F0933 /* MainViewController.swift */; };
+		B39BCDC7295BBE7A008F0933 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDC6295BBE7A008F0933 /* MainViewModel.swift */; };
+		B39BCDCA295BC06D008F0933 /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = B39BCDC9295BC06D008F0933 /* Stevia */; };
+		B39BCDCC295BC48B008F0933 /* NSAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDCB295BC48B008F0933 /* NSAttributedString+Extension.swift */; };
+		B39BCDCE295BD0EE008F0933 /* IBMPlexSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B39BCDCD295BD0EE008F0933 /* IBMPlexSans-Regular.ttf */; };
+		B39BCDD1295C611C008F0933 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDD0295C611C008F0933 /* TabBar.swift */; };
+		B39BCDD3295C640D008F0933 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDD2295C640D008F0933 /* TabBarItem.swift */; };
+		B39BCDD5295C6CF5008F0933 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDD4295C6CF5008F0933 /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +46,18 @@
 		B39BCDB1295BB73B008F0933 /* IBMPlexSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Medium.ttf"; sourceTree = "<group>"; };
 		B39BCDB2295BB73B008F0933 /* IBMPlexSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		B39BCDB6295BB83C008F0933 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		B39BCDB8295BB92A008F0933 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		B39BCDBA295BBAE0008F0933 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B39BCDBC295BBB5C008F0933 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		B39BCDBE295BBB94008F0933 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		B39BCDC0295BBC4F008F0933 /* ServiceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceContainer.swift; sourceTree = "<group>"; };
+		B39BCDC3295BBDF4008F0933 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B39BCDC6295BBE7A008F0933 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		B39BCDCB295BC48B008F0933 /* NSAttributedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Extension.swift"; sourceTree = "<group>"; };
+		B39BCDCD295BD0EE008F0933 /* IBMPlexSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Regular.ttf"; sourceTree = "<group>"; };
+		B39BCDD0295C611C008F0933 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		B39BCDD2295C640D008F0933 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		B39BCDD4295C6CF5008F0933 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B39BCDCA295BC06D008F0933 /* Stevia in Frameworks */,
 				B39BCDA8295BAD47008F0933 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,7 +92,6 @@
 		B39BCD8A295BA9B8008F0933 /* Airalo Sample Project */ = {
 			isa = PBXGroup;
 			children = (
-				B39BCDAF295BB6DE008F0933 /* Resources */,
 				B39BCD9F295BA9E0008F0933 /* API */,
 				B39BCDA0295BA9E9008F0933 /* App */,
 				B39BCDA1295BA9F3008F0933 /* Controllers */,
@@ -74,6 +99,7 @@
 				B39BCDA3295BAA09008F0933 /* Services */,
 				B39BCDA4295BAA14008F0933 /* Shared */,
 				B39BCDA5295BAA20008F0933 /* Utils */,
+				B39BCDAF295BB6DE008F0933 /* Resources */,
 				B39BCD94295BA9B9008F0933 /* Assets.xcassets */,
 				B39BCD99295BA9B9008F0933 /* Info.plist */,
 				B39BCD96295BA9B9008F0933 /* LaunchScreen.storyboard */,
@@ -95,6 +121,8 @@
 			children = (
 				B39BCD8B295BA9B8008F0933 /* AppDelegate.swift */,
 				B39BCD8D295BA9B8008F0933 /* SceneDelegate.swift */,
+				B39BCDBC295BBB5C008F0933 /* AppCoordinator.swift */,
+				B39BCDBE295BBB94008F0933 /* NavigationController.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -102,6 +130,7 @@
 		B39BCDA1295BA9F3008F0933 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B39BCDC2295BBDCD008F0933 /* MainViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -117,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				B39BCDA9295BAD5C008F0933 /* NetworkService.swift */,
+				B39BCDC0295BBC4F008F0933 /* ServiceContainer.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -124,6 +154,8 @@
 		B39BCDA4295BAA14008F0933 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				B39BCDBA295BBAE0008F0933 /* Coordinator.swift */,
+				B39BCDCF295C60AC008F0933 /* TabBar */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -148,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				B39BCDB1295BB73B008F0933 /* IBMPlexSans-Medium.ttf */,
+				B39BCDCD295BD0EE008F0933 /* IBMPlexSans-Regular.ttf */,
 				B39BCDB2295BB73B008F0933 /* IBMPlexSans-SemiBold.ttf */,
 			);
 			path = Fonts;
@@ -157,8 +190,29 @@
 			isa = PBXGroup;
 			children = (
 				B39BCDB6295BB83C008F0933 /* UIFont+Extension.swift */,
+				B39BCDB8295BB92A008F0933 /* UIColor+Extension.swift */,
+				B39BCDCB295BC48B008F0933 /* NSAttributedString+Extension.swift */,
+				B39BCDD4295C6CF5008F0933 /* UIView+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		B39BCDC2295BBDCD008F0933 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B39BCDC6295BBE7A008F0933 /* MainViewModel.swift */,
+				B39BCDC3295BBDF4008F0933 /* MainViewController.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		B39BCDCF295C60AC008F0933 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				B39BCDD0295C611C008F0933 /* TabBar.swift */,
+				B39BCDD2295C640D008F0933 /* TabBarItem.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +233,7 @@
 			name = "Airalo Sample Project";
 			packageProductDependencies = (
 				B39BCDA7295BAD47008F0933 /* Alamofire */,
+				B39BCDC9295BC06D008F0933 /* Stevia */,
 			);
 			productName = "Airalo Sample Project";
 			productReference = B39BCD88295BA9B8008F0933 /* Airalo Sample Project.app */;
@@ -210,6 +265,7 @@
 			mainGroup = B39BCD7F295BA9B8008F0933;
 			packageReferences = (
 				B39BCDA6295BAD47008F0933 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				B39BCDC8295BC06D008F0933 /* XCRemoteSwiftPackageReference "Stevia" */,
 			);
 			productRefGroup = B39BCD89295BA9B8008F0933 /* Products */;
 			projectDirPath = "";
@@ -227,6 +283,7 @@
 			files = (
 				B39BCDB3295BB73B008F0933 /* IBMPlexSans-Medium.ttf in Resources */,
 				B39BCD98295BA9B9008F0933 /* LaunchScreen.storyboard in Resources */,
+				B39BCDCE295BD0EE008F0933 /* IBMPlexSans-Regular.ttf in Resources */,
 				B39BCDB4295BB73B008F0933 /* IBMPlexSans-SemiBold.ttf in Resources */,
 				B39BCD95295BA9B9008F0933 /* Assets.xcassets in Resources */,
 			);
@@ -239,12 +296,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B39BCDC1295BBC4F008F0933 /* ServiceContainer.swift in Sources */,
+				B39BCDBB295BBAE0008F0933 /* Coordinator.swift in Sources */,
+				B39BCDB9295BB92A008F0933 /* UIColor+Extension.swift in Sources */,
+				B39BCDD1295C611C008F0933 /* TabBar.swift in Sources */,
+				B39BCDD3295C640D008F0933 /* TabBarItem.swift in Sources */,
+				B39BCDC4295BBDF4008F0933 /* MainViewController.swift in Sources */,
 				B39BCDB7295BB83C008F0933 /* UIFont+Extension.swift in Sources */,
+				B39BCDD5295C6CF5008F0933 /* UIView+Extension.swift in Sources */,
+				B39BCDC7295BBE7A008F0933 /* MainViewModel.swift in Sources */,
 				B39BCDAE295BAE1A008F0933 /* Network.swift in Sources */,
 				B39BCD8C295BA9B8008F0933 /* AppDelegate.swift in Sources */,
 				B39BCDAC295BADDA008F0933 /* APIError.swift in Sources */,
+				B39BCDBD295BBB5C008F0933 /* AppCoordinator.swift in Sources */,
+				B39BCDBF295BBB94008F0933 /* NavigationController.swift in Sources */,
 				B39BCDAA295BAD5C008F0933 /* NetworkService.swift in Sources */,
 				B39BCD8E295BA9B8008F0933 /* SceneDelegate.swift in Sources */,
+				B39BCDCC295BC48B008F0933 /* NSAttributedString+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +528,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		B39BCDC8295BC06D008F0933 /* XCRemoteSwiftPackageReference "Stevia" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/freshOS/Stevia";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -467,6 +543,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B39BCDA6295BAD47008F0933 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		B39BCDC9295BC06D008F0933 /* Stevia */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B39BCDC8295BC06D008F0933 /* XCRemoteSwiftPackageReference "Stevia" */;
+			productName = Stevia;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
