@@ -17,6 +17,21 @@ final class AppCoordinator: Coordinator {
         
         let viewModel = MainViewModel(serviceContainer: serviceContainer)
         let mainVc = MainViewController(viewModel: viewModel)
+        mainVc.delegate = self
         navigationController?.setViewControllers([mainVc], animated: false)
+    }
+    
+    private func presentCountryPackages(_ esim: LocalESIM) {
+        let viewModel = CountryPackageViewModel(esim: esim, serviceContainer: serviceContainer)
+        let countryPackageViewController = CountryPackageViewController(viewModel: viewModel)
+        navigationController?.pushViewController(countryPackageViewController, animated: true)
+    }
+}
+
+extension AppCoordinator: MainViewControllerDelegate {}
+
+extension AppCoordinator: LocalESIMViewControllerDelegate {
+    func didSelect(_ esim: LocalESIM) {
+        presentCountryPackages(esim)
     }
 }

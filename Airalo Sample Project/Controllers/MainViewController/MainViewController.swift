@@ -1,6 +1,10 @@
 import UIKit
 import Stevia
 
+protocol MainViewControllerDelegate: LocalESIMViewControllerDelegate {
+    
+}
+
 class MainViewController: UIViewController {
     private let titleLabel = UILabel()
     private let searchField = UITextField()
@@ -10,6 +14,7 @@ class MainViewController: UIViewController {
     
     private let viewModel: MainViewModel
     
+    weak var delegate: MainViewControllerDelegate?
     private var localESIMController: LocalESIMViewController?
     
     init(viewModel: MainViewModel) {
@@ -83,6 +88,7 @@ class MainViewController: UIViewController {
         if localESIMController == nil {
             let localViewModel = LocalESIMViewModel(serviceContainer: viewModel.serviceContainer)
             localESIMController = LocalESIMViewController(viewModel: localViewModel)
+            localESIMController?.delegate = delegate
         }
         
         containerView.subviews.forEach { $0.removeFromSuperview() }
