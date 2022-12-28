@@ -27,30 +27,21 @@ final class NetworkService: NetworkServiceable {
                         .eraseToAnyPublisher()
                 } else {
                     switch value.result {
-                    case .failure(let error):
+                    case .failure:
                         break
                     default:
                         break
                     }
                     
-                    let error: APIError = self.map(value.data)
-                    return Fail(error: error).eraseToAnyPublisher()
+                    return Fail(error: APIError.unknown).eraseToAnyPublisher()
                 }
             }
             .eraseToAnyPublisher()
     }
     
-    private func map(_ data: Data?) -> APIError {
-        if let errorBody = try? decoder.decode(APIErrorBody.self, from: data ?? Data()) {
-            return .error(errorBody)
-        } else {
-            return .unknown
-        }
-    }
-    
     private func printDetails(_ object: Any) {
-#if DEBUG || LIVE
+    #if DEBUG || LIVE
         debugPrint(object)
-#endif
+    #endif
     }
 }
