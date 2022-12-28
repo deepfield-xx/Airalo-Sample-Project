@@ -31,6 +31,14 @@
 		B39BCDD1295C611C008F0933 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDD0295C611C008F0933 /* TabBar.swift */; };
 		B39BCDD3295C640D008F0933 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDD2295C640D008F0933 /* TabBarItem.swift */; };
 		B39BCDD5295C6CF5008F0933 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDD4295C6CF5008F0933 /* UIView+Extension.swift */; };
+		B39BCDD7295C79F4008F0933 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDD6295C79F4008F0933 /* UIViewController+Extension.swift */; };
+		B39BCDDA295C7A90008F0933 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDD9295C7A90008F0933 /* ViewController.swift */; };
+		B39BCDDD295C7B70008F0933 /* LocalESIMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDDC295C7B70008F0933 /* LocalESIMViewController.swift */; };
+		B39BCDDF295C7B87008F0933 /* LocalESIMViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDDE295C7B87008F0933 /* LocalESIMViewModel.swift */; };
+		B39BCDE1295C7C9E008F0933 /* LocalESIM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDE0295C7C9E008F0933 /* LocalESIM.swift */; };
+		B39BCDE4295C8773008F0933 /* LocalESIMViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDE3295C8773008F0933 /* LocalESIMViewCell.swift */; };
+		B39BCDE7295C89F3008F0933 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B39BCDE6295C89F3008F0933 /* Kingfisher */; };
+		B39BCDE9295C8B2A008F0933 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39BCDE8295C8B2A008F0933 /* NSObject+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +66,13 @@
 		B39BCDD0295C611C008F0933 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		B39BCDD2295C640D008F0933 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		B39BCDD4295C6CF5008F0933 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		B39BCDD6295C79F4008F0933 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		B39BCDD9295C7A90008F0933 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B39BCDDC295C7B70008F0933 /* LocalESIMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalESIMViewController.swift; sourceTree = "<group>"; };
+		B39BCDDE295C7B87008F0933 /* LocalESIMViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalESIMViewModel.swift; sourceTree = "<group>"; };
+		B39BCDE0295C7C9E008F0933 /* LocalESIM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalESIM.swift; sourceTree = "<group>"; };
+		B39BCDE3295C8773008F0933 /* LocalESIMViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalESIMViewCell.swift; sourceTree = "<group>"; };
+		B39BCDE8295C8B2A008F0933 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B39BCDE7295C89F3008F0933 /* Kingfisher in Frameworks */,
 				B39BCDCA295BC06D008F0933 /* Stevia in Frameworks */,
 				B39BCDA8295BAD47008F0933 /* Alamofire in Frameworks */,
 			);
@@ -130,6 +146,7 @@
 		B39BCDA1295BA9F3008F0933 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B39BCDDB295C7B49008F0933 /* LocalESIMViewController */,
 				B39BCDC2295BBDCD008F0933 /* MainViewController */,
 			);
 			path = Controllers;
@@ -138,6 +155,7 @@
 		B39BCDA2295BA9FE008F0933 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B39BCDE0295C7C9E008F0933 /* LocalESIM.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -154,6 +172,7 @@
 		B39BCDA4295BAA14008F0933 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				B39BCDD8295C7A72008F0933 /* ViewController */,
 				B39BCDBA295BBAE0008F0933 /* Coordinator.swift */,
 				B39BCDCF295C60AC008F0933 /* TabBar */,
 			);
@@ -193,6 +212,8 @@
 				B39BCDB8295BB92A008F0933 /* UIColor+Extension.swift */,
 				B39BCDCB295BC48B008F0933 /* NSAttributedString+Extension.swift */,
 				B39BCDD4295C6CF5008F0933 /* UIView+Extension.swift */,
+				B39BCDD6295C79F4008F0933 /* UIViewController+Extension.swift */,
+				B39BCDE8295C8B2A008F0933 /* NSObject+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -215,6 +236,32 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		B39BCDD8295C7A72008F0933 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B39BCDD9295C7A90008F0933 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B39BCDDB295C7B49008F0933 /* LocalESIMViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B39BCDE2295C874B008F0933 /* Cell */,
+				B39BCDDE295C7B87008F0933 /* LocalESIMViewModel.swift */,
+				B39BCDDC295C7B70008F0933 /* LocalESIMViewController.swift */,
+			);
+			path = LocalESIMViewController;
+			sourceTree = "<group>";
+		};
+		B39BCDE2295C874B008F0933 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B39BCDE3295C8773008F0933 /* LocalESIMViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -234,6 +281,7 @@
 			packageProductDependencies = (
 				B39BCDA7295BAD47008F0933 /* Alamofire */,
 				B39BCDC9295BC06D008F0933 /* Stevia */,
+				B39BCDE6295C89F3008F0933 /* Kingfisher */,
 			);
 			productName = "Airalo Sample Project";
 			productReference = B39BCD88295BA9B8008F0933 /* Airalo Sample Project.app */;
@@ -266,6 +314,7 @@
 			packageReferences = (
 				B39BCDA6295BAD47008F0933 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				B39BCDC8295BC06D008F0933 /* XCRemoteSwiftPackageReference "Stevia" */,
+				B39BCDE5295C89F3008F0933 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = B39BCD89295BA9B8008F0933 /* Products */;
 			projectDirPath = "";
@@ -296,14 +345,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B39BCDDD295C7B70008F0933 /* LocalESIMViewController.swift in Sources */,
+				B39BCDD7295C79F4008F0933 /* UIViewController+Extension.swift in Sources */,
+				B39BCDE4295C8773008F0933 /* LocalESIMViewCell.swift in Sources */,
+				B39BCDDA295C7A90008F0933 /* ViewController.swift in Sources */,
 				B39BCDC1295BBC4F008F0933 /* ServiceContainer.swift in Sources */,
 				B39BCDBB295BBAE0008F0933 /* Coordinator.swift in Sources */,
 				B39BCDB9295BB92A008F0933 /* UIColor+Extension.swift in Sources */,
 				B39BCDD1295C611C008F0933 /* TabBar.swift in Sources */,
 				B39BCDD3295C640D008F0933 /* TabBarItem.swift in Sources */,
 				B39BCDC4295BBDF4008F0933 /* MainViewController.swift in Sources */,
+				B39BCDE1295C7C9E008F0933 /* LocalESIM.swift in Sources */,
+				B39BCDE9295C8B2A008F0933 /* NSObject+Extension.swift in Sources */,
 				B39BCDB7295BB83C008F0933 /* UIFont+Extension.swift in Sources */,
 				B39BCDD5295C6CF5008F0933 /* UIView+Extension.swift in Sources */,
+				B39BCDDF295C7B87008F0933 /* LocalESIMViewModel.swift in Sources */,
 				B39BCDC7295BBE7A008F0933 /* MainViewModel.swift in Sources */,
 				B39BCDAE295BAE1A008F0933 /* Network.swift in Sources */,
 				B39BCD8C295BA9B8008F0933 /* AppDelegate.swift in Sources */,
@@ -536,6 +592,14 @@
 				kind = branch;
 			};
 		};
+		B39BCDE5295C89F3008F0933 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -548,6 +612,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B39BCDC8295BC06D008F0933 /* XCRemoteSwiftPackageReference "Stevia" */;
 			productName = Stevia;
+		};
+		B39BCDE6295C89F3008F0933 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B39BCDE5295C89F3008F0933 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -6,8 +6,11 @@ class MainViewController: UIViewController {
     private let searchField = UITextField()
     private let navBar = TabBar()
     private let shadowView = UIView()
+    private let containerView = UIView()
     
     private let viewModel: MainViewModel
+    
+    private var localESIMController: LocalESIMViewController?
     
     init(viewModel: MainViewModel) {
         self.viewModel = viewModel
@@ -23,6 +26,7 @@ class MainViewController: UIViewController {
 
         setUp()
         setUpLayout()
+        showLocalESIMS()
         
         view.backgroundColor = .white
     }
@@ -51,6 +55,7 @@ class MainViewController: UIViewController {
         shadowView.applyShadow()
         
         view.subviews {
+            containerView
             shadowView
             titleLabel
             searchField
@@ -70,5 +75,17 @@ class MainViewController: UIViewController {
         
         shadowView.top(0).left(0).right(0)
         shadowView.Bottom == navBar.Bottom + 8
+        containerView.Top == shadowView.Bottom
+        containerView.left(0).right(0).bottom(0)
+    }
+    
+    private func showLocalESIMS() {
+        if localESIMController == nil {
+            let localViewModel = LocalESIMViewModel(serviceContainer: viewModel.serviceContainer)
+            localESIMController = LocalESIMViewController(viewModel: localViewModel)
+        }
+        
+        containerView.subviews.forEach { $0.removeFromSuperview() }
+        add(child: localESIMController!, to: containerView, animated: true)
     }
 }
