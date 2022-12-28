@@ -8,6 +8,7 @@ protocol TabBarItemDelegate: AnyObject {
 class TabBarItem: UIView {
     private let name: String
     private let label = UILabel()
+    private let selectionView = UIView()
     
     weak var delegate: TabBarItemDelegate?
     
@@ -25,7 +26,7 @@ class TabBarItem: UIView {
     private func setUp() {
         addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTap)))
         
-        layer.cornerRadius = 7
+        selectionView.layer.cornerRadius = 7
         
         label.contentMode = .top
         label.textColor = UIColor(hex: 0x4A4A4A)
@@ -34,8 +35,13 @@ class TabBarItem: UIView {
         label.textAlignment = .center
         
         subviews {
+            selectionView
             label
         }
+        
+        selectionView.centerVertically()
+        selectionView.height(28)
+        selectionView.fillHorizontally()
         
         label.centerVertically().centerHorizontally()
     }
@@ -47,7 +53,7 @@ class TabBarItem: UIView {
     var isSelected = false {
         didSet {
             label.textColor = isSelected ? UIColor(hex: 0x4A4A4A) : UIColor(hex: 0x8A8A8A)
-            backgroundColor = isSelected ? UIColor(hex: 0xEEEEEE) : .white
+            selectionView.backgroundColor = isSelected ? UIColor(hex: 0xEEEEEE) : .white
         }
     }
 }

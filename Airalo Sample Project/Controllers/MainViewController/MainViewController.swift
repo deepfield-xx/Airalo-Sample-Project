@@ -70,11 +70,11 @@ class MainViewController: UIViewController {
             9
             |-20-searchField-20-| ~ 36
             23
-            |-20-navBar-20-| ~ 28
+            |-20-navBar-20-| ~ 44
         }
         
         shadowView.top(0).left(0).right(0)
-        shadowView.Bottom == navBar.Bottom + 8
+        shadowView.Bottom == navBar.Bottom
         containerView.Top == shadowView.Bottom
         containerView.left(0).right(0).bottom(0)
     }
